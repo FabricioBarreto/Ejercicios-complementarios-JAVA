@@ -1,13 +1,12 @@
 package Level_1;
-
 import java.util.Scanner;
 
 public class SecuenciaDeNumeros_3
 {
+    static Scanner entrada = new Scanner (System.in);
+
     public static void main(String[] args)
     {
-        Scanner entrada = new Scanner (System.in);
-
         System.out.println("Ingrese el número a secuenciar:");
         int num = entrada.nextInt();
         int vuelta = 0;
@@ -19,6 +18,5 @@ public class SecuenciaDeNumeros_3
             }
             System.out.println("");
         }
-        entrada.close();
     }
 }

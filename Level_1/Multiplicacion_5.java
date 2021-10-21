@@ -1,8 +1,8 @@
 package Level_1;
 import java.util.Scanner;
 
-public class Multiplicacion_5 {
-
+public class Multiplicacion_5
+{
     static Scanner entrada = new Scanner (System.in);
 
     public static void main(String[] args){

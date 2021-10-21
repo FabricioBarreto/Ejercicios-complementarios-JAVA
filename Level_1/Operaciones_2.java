@@ -1,12 +1,12 @@
 package Level_1;
-
 import java.util.Scanner;
 
-public class Operaciones_2{
+public class Operaciones_2
+{
+    static Scanner entrada = new Scanner(System.in);
 
     public static void main(String[] args)
     {
-        Scanner entrada = new Scanner(System.in);
         int num1,num2,suma,resta,mult,div,mod;
 
         System.out.println("Ingrese los números:");
@@ -24,6 +24,5 @@ public class Operaciones_2{
         System.out.println(num1 + " * " + num2 + " = " + mult);
         System.out.println(num1 + " / " + num2 + " = " + div);
         System.out.println(num1 + " % " + num2 + " = " + mod);
-        entrada.close();
     }
 }
