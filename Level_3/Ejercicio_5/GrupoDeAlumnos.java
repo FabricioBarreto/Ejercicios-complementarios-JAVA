@@ -25,11 +25,11 @@ public class GrupoDeAlumnos {
         new Alumno("Roldan", "Sonia",(ahora.minusYears(19))),
         new Alumno("Olivieri", "Antonio",(ahora.minusYears(27))));
     
-        Map<Alumno,Integer> datos = new HashMap<Alumno,Integer>();
+        Map<String,Integer> datos = new HashMap<String,Integer>();
     
         for(Alumno persona:alumnos){
             int edad =  ahora.getYear() - persona.fechaDeNacimiento.getYear() ;
-            datos.put(persona,edad);
+            datos.put(persona.getNombres(),edad);
         }
         System.out.println(datos);
     } 

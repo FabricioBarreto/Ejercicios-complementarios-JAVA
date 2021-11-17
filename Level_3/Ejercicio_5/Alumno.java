@@ -12,12 +12,7 @@ public class Alumno {
         this.fechaDeNacimiento = _fechaDeNacimiento;
     }
     
-    @Override
-    public java.lang.String toString() {
+    String getNombres() {
         return apellido + " " + nombre;
-    }
-    
-    LocalDate getfechaDeNacimiento(){
-        return fechaDeNacimiento;
     }
 }
