@@ -1,16 +1,15 @@
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ContandoLaInicial_3 {
     public static void main(String[] args){
 
         List<String> palabras = List.of("Batman", "Aquaman", "Flash", "Batgirl", "Wonder Woman", "brainiac");
-        int cont = 0;
 
-        for(String palabra : palabras){
-           if (palabra.startsWith("b") || palabra.startsWith("B") ){
-            cont ++;
-           }
-        }
+        long cont = palabras.stream()
+                .filter(p -> p.startsWith("B") || p.startsWith("b"))
+                        .count();
+
         System.out.print(cont);
     }
 }

@@ -1,5 +1,6 @@
 import java.util.List;
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class FiltrandoValores_1{
 
@@ -11,12 +12,10 @@ public class FiltrandoValores_1{
         palabras.add("Informatorio");
         palabras.add("");
         
-		List<String> frase = new ArrayList<>();
+		List<String> frase = palabras.stream()
+				.filter(p -> p != null && p != "")
+					.collect(Collectors.toList());
 
-		for(String palabra : palabras){
-			if (palabra != null && palabra != "")
-				frase.add(palabra);
-		}
 		System.out.println(frase);
 	}
 }
