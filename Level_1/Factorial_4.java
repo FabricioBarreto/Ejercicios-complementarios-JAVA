@@ -7,7 +7,6 @@ public class Factorial_4
 
     public static void main(String[] args){
         int factorial=1;
-
         System.out.println("Ingrese un número para obtener su factorial:");
         int nro1=entrada.nextInt();
         int nro2=nro1;
